@@ -14,6 +14,9 @@ public class Main {
         printRaceResults();
     }
     private static void printRaceResults() {
+        cars.sort((o1, o2) -> o2.getDis() - o1.getDis());
+        bikes.sort((o1, o2) -> o2.getDis() - o1.getDis());
+        trucks.sort((o1, o2) -> o2.getDis() - o1.getDis());
         for (int i = 0; i < cars.size(); i++) {
             System.out.println("Name: " + cars.get(i).getName() + ", distance: " + cars.get(i).getDis() + "km" + ", type: car.");
             System.out.println("Name: " + bikes.get(i).getName() + ", distance: " + bikes.get(i).getDis() + "km" + ", type: bike.");
