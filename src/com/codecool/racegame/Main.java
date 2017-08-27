@@ -1,12 +1,12 @@
 package com.codecool.racegame;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    private static List<Car> cars = new LinkedList<>();
-    private static List<Motorcycle> bikes = new LinkedList<>();
-    private static List<Truck> trucks = new LinkedList<>();
+    private static List<Car> cars = new ArrayList<>();
+    private static List<Motorcycle> bikes = new ArrayList<>();
+    private static List<Truck> trucks = new ArrayList<>();
 
     public static void main(String[] args) {
         createVehicles();
